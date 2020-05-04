@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,8 +22,7 @@ requirements:
     - click
     - mercantile
     - numpy >=1.15,<2
-    - rasterio >=1.0.9
-    - boto3 >=1.2.4
+    - rasterio >=1.0.28
     - supermercado
 
 test:
@@ -31,9 +30,13 @@ test:
     - rio_cogeo
     - rio_cogeo.scripts
   commands:
+    - pip check
     - rio cogeo --help
     - rio cogeo create --help
     - rio cogeo validate --help
+  requires:
+    - pip
+    - boto3 >=1.2.4
 
 about:
   home: https://github.com/cogeotiff/rio-cogeo
