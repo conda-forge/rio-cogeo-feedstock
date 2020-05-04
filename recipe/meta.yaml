@@ -1,4 +1,4 @@
-{% set version = "1.1.6" %}
+{% set version = "1.1.9" %}
 
 package:
   name: rio-cogeo
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/rio-cogeo/rio-cogeo-{{ version }}.tar.gz
-  sha256: 1bd56c23af16e91b68df187ad22cf70f62f783fdd8a9d5f471fb405a4c6349de
+  sha256: 91aef989fa1a4386051ebf087a6f0f9995babb9cd5856b3c1734b45ea6b1ae7f
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,8 +22,7 @@ requirements:
     - click
     - mercantile
     - numpy >=1.15,<2
-    - rasterio >=1.0.9
-    - boto3 >=1.2.4
+    - rasterio >=1.0.28
     - supermercado
 
 test:
@@ -31,9 +30,13 @@ test:
     - rio_cogeo
     - rio_cogeo.scripts
   commands:
+    - pip check
     - rio cogeo --help
     - rio cogeo create --help
     - rio cogeo validate --help
+  requires:
+    - pip
+    - boto3 >=1.2.4
 
 about:
   home: https://github.com/cogeotiff/rio-cogeo
