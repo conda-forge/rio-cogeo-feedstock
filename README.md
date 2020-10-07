@@ -5,11 +5,9 @@ Home: https://github.com/cogeotiff/rio-cogeo
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rio-cogeo-feedstock/blob/master/LICENSE.txt)
 
 Summary: CloudOptimized GeoTIFF (COGEO) creation plugin for rasterio
-
-
 
 Current build status
 ====================
