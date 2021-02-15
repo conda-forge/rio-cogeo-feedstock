@@ -15,15 +15,14 @@ build:
 
 requirements:
   host:
-    - python >3.3
+    - python >3.6
     - pip
   run:
-    - python >3.3
+    - python >3.6
     - click
-    - mercantile
-    - numpy >=1.15,<2
-    - rasterio >=1.0.28
-    - supermercado
+    - morecantile >=2.1,<2.2
+    - numpy ~=1.15
+    - rasterio >=1.1,<1.2
 
 test:
   imports:
