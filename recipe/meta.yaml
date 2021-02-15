@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: rio-cogeo
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/rio-cogeo/rio-cogeo-{{ version }}.tar.gz
-  sha256: 87cbe02d02b9a2704aeeb509ef49fb6f689020a22fbb4f3ae0d7e292b83a8665
+  sha256: 2a328302aad6486cf72e4fbe7f3770975e1b6a89faf410a1d4c1040dab30bfd1
 
 build:
   number: 0
@@ -15,15 +15,14 @@ build:
 
 requirements:
   host:
-    - python >3.3
+    - python >3.6
     - pip
   run:
-    - python >3.3
+    - python >3.6
     - click
-    - mercantile
-    - numpy >=1.15,<2
-    - rasterio >=1.0.28
-    - supermercado
+    - morecantile >=2.1,<2.2
+    - numpy ~=1.15
+    - rasterio >=1.1,<1.2
 
 test:
   imports:
