@@ -1,4 +1,4 @@
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 package:
   name: rio-cogeo
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/rio-cogeo/rio-cogeo-{{ version }}.tar.gz
-  sha256: a65dcbfd4019eaea5576568dc7051afb654b51f047496e011f244b1c1545c6b2
+  sha256: dc574bcb2941fa7e96d1ef1b92e95be625b359f302e3c9edddd793f89b6ed74b
 
 build:
   number: 0
