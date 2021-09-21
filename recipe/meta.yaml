@@ -9,7 +9,7 @@ source:
   sha256: a81fc20711c61897c67e6f7e9f1122cc5de68fa85e4f20ae41650e46c94e07e4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,10 +19,11 @@ requirements:
     - pip
   run:
     - python >3.6
-    - click
+    - click >=7.0
     - morecantile >=2.1,<2.2
     - numpy ~=1.15
-    - rasterio >=1.1,<1.2
+    - pydantic
+    - rasterio >=1.1
 
 test:
   imports:
