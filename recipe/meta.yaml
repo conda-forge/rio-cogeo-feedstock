@@ -15,12 +15,12 @@ build:
 
 requirements:
   host:
-    - python >3.6
+    - python >=3.7
     - pip
   run:
-    - python >3.6
+    - python >=3.7
     - click >=7.0
-    - morecantile >=2.1,<2.2
+    - morecantile >=3.0,<3.1
     - numpy ~=1.15
     - pydantic
     - rasterio >=1.1
