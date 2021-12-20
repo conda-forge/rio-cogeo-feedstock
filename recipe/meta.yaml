@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - click >=7.0,<8
+    - click >=7.0
     - morecantile >=3.0,<3.1
     - numpy ~=1.15
     - pydantic
