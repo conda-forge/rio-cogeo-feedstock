@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: rio-cogeo
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/rio-cogeo/rio-cogeo-{{ version }}.tar.gz
-  sha256: 2efcff9f6f36b343c7dfa05c01087f9cf7a717e4df0bc6cdf94ecf453caafed3
+  sha256: a1f1b3fa34d5d626ff7b8abfa9670646e25bd710d9f365d1540625c3c2b05541
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - click >=7.0,<8
+    - click >=7.0
     - morecantile >=3.0,<3.1
     - numpy ~=1.15
     - pydantic
