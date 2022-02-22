@@ -20,7 +20,7 @@ requirements:
   run:
     - python >=3.7
     - click >=7.0
-    - morecantile >=3.0,<3.1
+    - morecantile >=3.1,<4.0
     - numpy ~=1.15
     - pydantic
     - rasterio >=1.1
