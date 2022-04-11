@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: rio-cogeo
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/rio-cogeo/rio-cogeo-{{ version }}.tar.gz
-  sha256: 54a6bd7448754806fbbfef973483aa46140d64ac96d69d3a5e88a374f819d2df
+  sha256: bc054e42326df5a21255b3ca787d78e9db0f0b000180461b528c7f3b5dbeda24
 
 build:
   number: 0
@@ -17,6 +17,7 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - flit-core
   run:
     - python >=3.7
     - click >=7.0
