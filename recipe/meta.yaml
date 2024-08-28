@@ -1,5 +1,5 @@
 {% set name = "rio-cogeo" %}
-{% set version = "5.3.3" %}
+{% set version = "5.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,17 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rio_cogeo-{{ version }}.tar.gz
-  sha256: dde35024ad2512027ce6c1269183d4e42a904a776aad0d4ddb6f87aacffc7a23
+  sha256: 386ed51f59d0843677f5e59544133a664357e67fe3415f4f1c97d4228738cfe0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python >=3.8
-    - flit >=3.2,<4
+    - flit-core >=3.2,<4
     - pip
   run:
     - python >=3.8
