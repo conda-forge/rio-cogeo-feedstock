@@ -1,5 +1,5 @@
 {% set name = "rio-cogeo" %}
-{% set version = "7.0.0" %}
+{% set version = "7.0.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rio_cogeo-{{ version }}.tar.gz
-  sha256: de1c8ff39e4f4357c73eec1cd86c0054fa2b2542898cfad2036921776660ab79
+  sha256: 3bfe448e221579e8b2ee569114c8c5cc4bdabe00f99fe5dc10782e75eba31dd0
 
 build:
   noarch: python
